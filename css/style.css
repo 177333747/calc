@@ -1,59 +1,53 @@
 body{
-background-color:mintcream;
+
     user-select: none;
-    height: 2px;
+    
 
   }
   .container {
     display: grid;
-    grid-template-columns:  1fr 1fr 1fr 1fr;
-    grid-gap: 4px;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+   
     background-color: black;
-    border-radius: 5px;
-    max-width: 360px;
-    font-family: 'Tahoma';
+    border-radius: 10px;
+    max-width: 450px;
+    font-family: 'Calibri';
+    padding: 15px;
   }
   .item{
-    background-color:ivory;
-    color: black;
+    
+    color: rgb(255, 255, 255);
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 22px;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  form{
-    max-width: 100%;
-
-  }
-  input{
-    width: 100%;
-    height: 60px;
-    border: none;
     font-size: 30px;
-    outline: none;
-    text-align: right;
+    cursor: pointer;
+ 
   }
+
   .input {
+    min-height: 60px;
+    height: auto;
+    padding: 5px 20px;
     grid-column: 1/-1;
-    padding: 0;
+    font-size: 40px;
+    justify-content: flex-end;
+}
 
-  }
-  .clean{
-    grid-column: 1/3;
-    background-color:coral;
+.upper{
+  font-size:20px;
+  margin-left: 3px;
+  margin-top: -20px;
+}
 
-  }
-  .back{
-    grid-column: 3/-1;
-  }
-  .equal{
-    grid-column: 4;
-    grid-row: 6/8;
-    background-color:indianred;
-  }
-  .zero{
-    grid-column: 1/3;
-  }
+.clean, .back, .percent, .divide, .sub, .mul, .add{
+  color: blanchedalmond;
+}
+
+.equal{
+  background-color: coral;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}

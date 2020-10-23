@@ -1,17 +1,38 @@
+let input =document.querySelector('.input');
+
+
+
 function insert(num){
-    document.form.textview.value +=num;
+  if(input.textContent ==0){
+    input.textContent="";
+    input.textContent = input.textContent +num;
+  }else
+    input.textContent = input.textContent +num;
   }
   function clean(){
-    document.form.textview.value=''
+    input.textContent=''
   }
   function back(){
-    var exp = document.form.textview.value;
-    document.form.textview.value = exp.substring(0,
-    exp.length-1);
-  }
-  function equal(){
-    var exp = document.form.textview.value;
-    if(exp){
-      document.form.textview.value = eval(exp);
+    let exp = input.textContent;
+    input.textContent = exp.substring(0, exp.length-1);
+    if(input.textContent ==0){
+      input.textContent="";
     }
   }
+  function equal(){
+    let exp = input.textContent;
+    if(exp){
+      input.textContent = eval(exp);
+    }
+  }
+
+function percent(){
+  input.textContent=eval(input.textContent)/100;
+}
+
+function pi(){
+  if(input.textContent ==0){
+    input.textContent="";
+  }
+  input.textContent = input.textContent =Math.PI;
+}
